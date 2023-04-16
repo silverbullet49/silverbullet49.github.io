@@ -6,6 +6,9 @@ tags:
   - Docker
   - Digest
   - Container
+header:
+  image: /assets/images/docker.png
+  caption: "Photo credit: [**tecoble**](https://tecoble.techcourse.co.kr/post/2021-08-14-docker/)"
 ---
 # What is the digest?
 
