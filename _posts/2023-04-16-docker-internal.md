@@ -1,3 +1,12 @@
+---
+title: "What is the digest of the docker image?"
+categories:
+  - internal
+tags:
+  - Docker
+  - Digest
+  - Container
+---
 # What is the digest?
 
 The Digest is the sha256 hash value of the images to prevent corruption of the contents.
