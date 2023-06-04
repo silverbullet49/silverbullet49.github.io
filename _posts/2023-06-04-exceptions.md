@@ -13,3 +13,6 @@
   - 예외 처리 메서드를 작성할 수 있어서, 세밀한 제어에 도움.
 -  ResponseStatusExceptionResolver는 @ResponseStatus 나 ResponseStatusException을 처리.
 - DefaultHandlerExceptionResolver는 컨트롤러 매핑 과정에서 일어나는 exception(예를 들어, 잘못된 method로 요청하는 케이스)들을 처리.
+
+
+> 참고 : https://kihwan95.tistory.com/8
