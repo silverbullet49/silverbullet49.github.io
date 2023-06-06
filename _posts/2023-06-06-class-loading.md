@@ -1,3 +1,10 @@
+---
+title: "class loading"
+categories:
+  - study
+tags:
+  - Java
+---
 # Class Loading
 - 클래스 로더는 java class들을 **동적으로** jvm에 로딩한다.
 - 자바 클래스들은 메모리에 한번에 적재되지 않고, 어플리케이션이 필요할 때 적재된다.
