@@ -71,7 +71,7 @@ newProxyInstance 내부에서는 아래 과정이 진행된다.
 
 Proxy 클래스를 생성한다는 뜻은 .class 파일의 내용을 만들어서 classLoader에 등록한다는 뜻이다.
 
-![defineClass](../assets/images/dynamic-proxy/gen.png)
+![defineClass](https://github.com/silverbullet49/silverbullet49.github.io/blob/main/assets/images/dynamic-proxy/gen.png?raw=true)
 
 ```generateProxyClass```를 통해 얻은 class를 ```defineClass```로 classLoader에 등록한다. (아마 initialization까지 진행될 것 같다.)
 
@@ -79,7 +79,7 @@ Proxy 클래스를 생성한다는 뜻은 .class 파일의 내용을 만들어�
 
 ```generateProxyClass```는 .class 파일에 들어가는 내용들을 byte[] 형태로 한 땀 한 땀 작성한다. 내부적으로 ```ProxyGenerator```가 reflection api를 활용하여 class 파일을 만드는 데 필요한 class name, method, return type, parameter 등등을 byte array 형태로 write하는 것이다.
 
-![generateClassFile](../assets/images/dynamic-proxy/generateClassFile.png)
+![generateClassFile](https://github.com/silverbullet49/silverbullet49.github.io/blob/main/assets/images/dynamic-proxy/generateClassFile.png?raw=true)
 
 
 ```generateProxyClass```가 Proxy 클래스를 생성할 때는 아래의 특징을 갖도록 만든다.
@@ -105,3 +105,7 @@ public class Proxy64 implements Animal {
 ```
 
 결국 a.crawl() -> proxy64.m0() -> AnimalInvocationHandler.invoke() -> tiger.crawl() 순으로 호출된다.
+
+
+## 참고
+https://www.baeldung.com/jdk-com-sun-proxy
