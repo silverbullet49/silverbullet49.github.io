@@ -32,3 +32,5 @@ tags:
 
 ##
 - ctrl + \ = 창 분할하여 탭 복제
+- ctrl + shift + [ : 이전 탭으로 이동
+- ctrl + shift + ] : 다음 탭으로 이동
